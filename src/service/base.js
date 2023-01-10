@@ -15,8 +15,12 @@ request.interceptors.request.use(
 )
 
 request.interceptors.response.use(response => {
-  const {code} = response.data
-  console.log('response:', response)
+  const {code, result} = response.data
+  if (code === 0) {
+    return Promise.resolve(result)
+  }
+}, error => {
+  return Promise.reject(error)
 })
 
 export default request
