@@ -56,11 +56,11 @@
 
 <style lang="scss" scoped>
   .slider {
-    position: relative;
     min-height: 1px;
     font-size: 0;
     touch-action: pan-y;
     .slider-group {
+      position: relative;
       overflow: hidden;
       white-space: nowrap;
       .slider-page {
@@ -80,8 +80,8 @@
     .dots-wrapper {
       position: absolute;
       left: 50%;
-      bottom: 4px;
-      line-height: 4px;
+      bottom: 6px;
+      line-height: 6px;
       transform: translateX(-50%);
       .dot {
         display: inline-block;
