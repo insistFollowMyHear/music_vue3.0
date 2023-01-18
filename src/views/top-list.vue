@@ -4,7 +4,7 @@
 
 <template>
   <div>
-    <p>recommend</p>
+    <p>topLIst</p>
   </div>
 </template>
 

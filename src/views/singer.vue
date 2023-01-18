@@ -1,10 +1,23 @@
 <script>
+  import { getSingerList } from '@/service/singer.js'
 
+  export default {
+    data() {
+      return {
+      }
+    },
+    async created() {
+      const result = await getSingerList()
+      console.log(result)
+    },
+    methods: {
+    }
+  }
 </script>
 
 <template>
   <div>
-    <p>recommend</p>
+    <p>signer</p>
   </div>
 </template>
 
